@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: #FFFFFF;
+  font-family: 'Asap Condensed', verdana, sans-serif;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.titel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 100px;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(10, 80, 50, 0.5);
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin: 5;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  background-color: rgba(50, 50, 50, 0.5);
+  max-width: 300px;
+  padding: 0.4em;
+  border-radius: 0.2em;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+.grid-container > div {
+  padding: 0.2em 1em;
+}
+
+.grid-container > div:nth-child(1) {
+  background-color: #2a80b9;
+}
+.grid-container > div:nth-child(2) {
+  background-color: #8f44ad;
+}
+.grid-container > div:nth-child(3) {
+  background-color: #16a086;
+}
+.grid-container > div:nth-child(4) {
+  background-color: #f1c40f;
+}
+.grid-container > div:nth-child(5) {
+  background-color: #e77e23;
+}
+
+

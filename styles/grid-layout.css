@@ -1,0 +1,138 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	height: 500px;
+	grid-gap: 10px; /*zit alleen tussen de cellen, niet aan de buitenkant*/
+	grid-template-areas: 
+		/*"titel titel"*/
+		"titel"
+		"temp" 
+		"voorr"
+		"km" 
+		"planet" 
+}
+
+.titel {
+	grid-area: titel;
+}
+
+.box1 {
+	grid-area: temp;
+}
+
+.box2 {
+	grid-area: voorr;
+}
+
+.box3 {
+	grid-area: km;
+}
+
+.box4 {
+	grid-area: planet;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px){
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   	grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: 
+    	"titel titel"
+    	"temp voorr"
+    	"km planet"; 
+  }
+
+.titel {
+	grid-area: titel;
+	margin: 0;
+	padding: 0;
+}
+
+  .box1 {
+	grid-area: temp;
+}
+
+.box2 {
+	grid-area: voorr;
+}
+
+.box3 {
+	grid-area: km;
+}
+
+.box4 {
+	grid-area: planet;
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px){
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   	grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    	"titel titel temp"
+    	"voorr km planet"
+  }
+
+.titel {
+	grid-area: titel;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+  .box1 {
+	grid-area: temp;
+}
+
+.box2 {
+	grid-area: voorr;
+}
+
+.box3 {
+	grid-area: km;
+}
+
+.box4 {
+	grid-area: planet;
+}
+}
+
+@media only screen and (min-width: 800px){
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   	grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    	"titel titel titel titel"
+    	"temp voorr km planet"
+  }
+
+.titel {
+	grid-area: titel;
+	margin: 0;
+	padding: 0;
+}
+
+  .box1 {
+	grid-area: temp;
+}
+
+.box2 {
+	grid-area: voorr;
+}
+
+.box3 {
+	grid-area: km;
+}
+
+.box4 {
+	grid-area: planet;
+}
+}
