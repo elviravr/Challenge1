@@ -13,6 +13,10 @@ body {
   color: #FFFFFF;
   font-family: 'Asap Condensed', verdana, sans-serif;
   text-shadow: 1px 1px 1px #000;
+  background-image: url("backgroundspacesmall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .titel {
@@ -24,32 +28,23 @@ body {
 
 h1 {
   text-align: center;
-  background-color: rgba(10, 80, 50, 0.5);
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: #FFFFFF;
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 10px;
-  margin: 5;
+  margin: 5,5,5,0;
   padding: 0;
 }
 
 h2 {
   font-size: 1em;
   font-weight: normal;
-  background-color: rgba(50, 50, 50, 0.5);
-  max-width: 300px;
+  background-color: rgba(176, 207, 254, 0.2);
   padding: 0.4em;
   border-radius: 0.2em;
   text-align: center;
-}
-
-label {
-  color: white;
 }
 
 .grid-container > div {
@@ -57,19 +52,23 @@ label {
 }
 
 .grid-container > div:nth-child(1) {
-  background-color: #2a80b9;
+  border-radius: 10px;
 }
 .grid-container > div:nth-child(2) {
-  background-color: #8f44ad;
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 10px;
 }
 .grid-container > div:nth-child(3) {
-  background-color: #16a086;
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 10px;
 }
 .grid-container > div:nth-child(4) {
-  background-color: #f1c40f;
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 10px;
 }
 .grid-container > div:nth-child(5) {
-  background-color: #e77e23;
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 10px;
 }
 
 

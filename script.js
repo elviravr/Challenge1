@@ -1,4 +1,4 @@
-Chart.defaults.global.defaultFontColor = 'black';
+Chart.defaults.global.defaultFontColor = 'rgb(175,175,175)';
 Chart.defaults.global.defaultFontFamily = 'Arial';
 
 var ctx = document.getElementById('chart1').getContext('2d');
@@ -10,27 +10,37 @@ var chart = new Chart(ctx, {
         labels: ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"],
         datasets: [{
             label: "Temperatuur",
-            backgroundColor: 'rgb(60, 200, 132,0.2)',
+            backgroundColor: 'rgba(78, 141, 44, 0.8)',
             borderColor: '#FFFFFF',
             data: temp,
         }]
     },
     options: {
         scales: {
-            yAxes: [{
-                scaleLabel: {
-                    display: true,
-                    labelString: "Aantal graden"
-                }
-            }]
-        },
+        xAxes: [{ 
+          gridLines: {
+            color: 'grey',
+            lineWidth: 1
+        }
+        }],
+        yAxes: [{ 
+            scaleLabel: {
+            display: true,
+            labelString: "Aantal graden",
+          },
+          gridLines: {
+            color: 'white',
+            lineWidth: 1
+        }
+        }]
+      },
         legend: {
             position: 'none'},
         layout: {
             padding: {
                 left: 0,
                 right: 20,
-                top: 0,
+                top: 20,
                 bottom: 0,
             }
         }
@@ -49,8 +59,9 @@ var chart = new Chart(ctx, {
             borderColor: '#FFFFFF',
             data: voorrd,
             backgroundColor: [
-            'rgba(90, 200, 80, 0.2)',
-            'rgba(255, 99, 132, 0.2)',
+            'rgba(78, 141, 44, 0.8)',
+            'rgba(0, 149, 221, 0.8)',
+            'rgba(176, 207, 254, 0.8)',
             ],
         }],
         labels: [
@@ -67,7 +78,7 @@ var chart = new Chart(ctx, {
                 left: 0,
                 right: 0,
                 top: 0,
-                bottom: 20,
+                bottom: 0,
             }
         }
     }
@@ -84,12 +95,13 @@ var chart = new Chart(ctx, {
         datasets: [{
             label: ["Snelheid"],
             backgroundColor: [
-            'rgba(90, 200, 80, 0.5)',
-            'rgba(255, 19, 132, 0.5)',
-            'rgba(205, 99, 132, 0.5)',
-            'rgba(100, 99, 132, 0.5)',
-            'rgba(90, 200, 80, 0.5)',
-            'rgba(255, 19, 132, 0.5)',
+            'rgba(78, 141, 44, 0.8)',
+            'rgba(0, 149, 221, 0.8)',
+            'rgba(176, 207, 254, 0.8)',
+            'rgba(66, 218, 254, 0.8)',
+            'rgba(66, 140, 247, 0.8)',
+            'rgba(66, 80, 132, 0.8)',
+            'rgba(66, 121, 92, 0.8)',
             ],
             borderColor: '#FFFFFF',
             data: snelh,
@@ -104,7 +116,7 @@ var chart = new Chart(ctx, {
             padding: {
                 left: 0,
                 right: 20,
-                top: 0,
+                top: 20,
                 bottom: 20,
             }
         },
@@ -115,10 +127,19 @@ var chart = new Chart(ctx, {
           scaleLabel: {
             display: true,
             labelString: "KM"
-          }
+          },
+          gridLines: {
+            color: 'white',
+            lineWidth: 1
+        }
+        }],
+        yAxes: [{ 
+          gridLines: {
+            color: 'white',
+            lineWidth: 1
+        }
         }]
       }
-
     }
 });
 
@@ -132,14 +153,32 @@ var chart = new Chart(ctx, {
         labels: ["Aarde", "Mars", "Maan"],
         datasets: [
             {
-              backgroundColor: ['rgba(90, 200, 80, 0.5)',
-                'rgba(255, 19, 132, 0.5)',
-                'rgba(205, 99, 132, 0.5)',
+              backgroundColor: [
+                'rgba(78, 141, 44, 0.5)',
+                'rgba(0, 149, 221, 0.5)',
+                'rgba(176, 207, 254, 0.5)',
             ],
               data: planeten,
             }
           ]
     },
     options: {
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0,
+            }
+        },
+        legend: {
+            position: 'bottom'},
+        animation: {
+            animateRotate: false,
+            animateScale: true
+        },
+        scale: {
+            gridLines: {color:'grey'}
+        }
     }
 });
